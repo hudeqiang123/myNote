@@ -357,3 +357,99 @@ dl、dt、dd
   <dd>层叠样式表</dd>
 </dl>
 ```
+
+---
+
+## CSS样式
+
+### 3-1 CSS概述
+
+CSS：Cascading Style Sheet 层叠样式表
+
+内容和样式相分离，便于修改样式
+
+```CSS
+选择器{
+  属性名:属性值;
+}
+```
+- 最后一条声明可以没有分号，但是为了以后修改方便，一般也加上分号
+
+- 为了使用样式更加容易阅读，可以将每条代码写在一个新行内
+
+---
+
+### 3-2 CSS添加方法
+
+ - 行内式
+
+```html
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <p style="color:red;font-size:14px">天使投资指早期投资，尤其指个人早期投资。</p>
+  </body>
+</html>
+```
+- 内嵌式
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      p:{
+        color:red;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>天使投资指早期投资，尤其指个人早期投资。</p>
+  </body>
+</html>
+```
+
+>- 即使有公共CSS代码，也是每个页面都要定义的
+>
+>- 适合文件很少，CSS代码也不多的情况
+>
+>- 如果一个网站有很多页面，每个文件都会变大，后期维护难度很大
+
+- 外链式
+
+外部样式表文件 style.css
+```css
+p{
+  color:red; /*设置文字颜色*/
+}
+```
+
+网页文件 1.html
+
+```html
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css"
+  </head>
+  </style>
+  <body>
+    <p>天使投资指早期投资，尤其指个人早期投资。</p>
+  </body>
+</html>
+```
+
+>- 页面结构HTML代码与样式CSS代码的完全分离
+>
+>- 维护方便
+>
+>- 如果需要改变网站风格，只需要修改公共CSS文件
+>
+>- 可以在同一个HTML文档内部引用多个外部样式表
+
+> 多种样式可以层叠，可以覆盖
+>
+>样式的优先级按照“就近原则”
+>
+>行内样式>内嵌样式>外链样式>浏览器默认样式
