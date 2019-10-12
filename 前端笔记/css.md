@@ -1,32 +1,40 @@
 # CSS
 
-快捷键
->bgc-->background-color：背景颜色
->
->fwb-->font-weight:normal：正常
->
->fsi-->font-style:italic：斜体
->
->fsn-->font-style:normal：不斜体
->
->tdn-->text-decoration:normla：没有下划线
->
-> 类上样式，id上行为（css层面用class，id属性是给js用的）
->
-> 就近原则：就近原则是标签近，不是CSS书写的位置近（注意：纠正观念！）
->
->书写位置一样近，然后再考虑谁写后面就听谁的。
->嵌套盒子用padding，相邻盒子用margin
+CSS：层叠样式表（Cascading Style Sheet）用来为网页创建样式表，通过样式表可以对网页进行修饰。
 
-> ### 常见兼容问题：
->
-> 子代选择器：IE7开始兼容，IE6不兼容
->
-> 序选择器：IE8兼容，IE6、7都不兼容
->
-> 兄弟选择器：IE7开始兼容，IE6不兼容
+**快捷键**
 
-> Cascading style Sheet层叠样式表
+- bgc-->background-color：背景颜色
+
+- fwn-->font-weight:normal：正常
+
+- fsi-->font-style:italic：斜体
+
+- fsn-->font-style:normal：不斜体
+
+- tdn-->text-decoration:normla：没有下划线
+
+---
+
+类上样式，id上行为（css层面用class，id属性是给js用的）
+
+就近原则：就近原则是标签近，不是CSS书写的位置近（注意：纠正观念！）
+
+书写位置一样近，然后再考虑谁写后面就听谁的。
+
+嵌套盒子用padding，相邻盒子用margin
+
+---
+
+**常见兼容问题**：
+
+-  子代选择器：IE7开始兼容，IE6不兼容
+
+-  序选择器：IE8兼容，IE6、7都不兼容
+
+-  兄弟选择器：IE7开始兼容，IE6不兼容
+
+---
 
 > - ## 清除默认边距
 >
